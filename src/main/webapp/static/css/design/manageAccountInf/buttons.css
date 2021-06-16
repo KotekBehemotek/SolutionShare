@@ -1,0 +1,44 @@
+.solutionButtons {
+    color: black;
+    background-color: #00000000;
+    border-color: black;
+    height: 60px;
+    width: 300px;
+}
+
+.buttonsOnPink {
+    margin-top: 5%;
+    float: right;
+}
+
+.buttonsOnPink:hover {
+    background-color: #b9e0e0;
+    border-color: transparent;
+}
+
+.textOnPink {
+    transition-duration: 0.2s;
+}
+
+.buttonsOnPink:hover .textOnPink {
+    padding-left: 100px;
+}
+
+.buttonsOnBlue {
+    margin-bottom: 5%;
+    float: top;
+}
+
+.buttonsOnBlue:hover {
+    background-color: #fff4f7;
+    border-color: transparent;
+}
+
+
+.textOnBlue {
+    transition-duration: 0.2s;
+}
+
+.buttonsOnBlue:hover .textOnBlue {
+    padding-right: 100px;
+}

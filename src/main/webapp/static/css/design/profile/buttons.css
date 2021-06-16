@@ -1,0 +1,28 @@
+.buttons {
+    background-color: #00000000;
+    border-color: #b9e0e0;
+    height: 60px;
+    width: 300px;
+    transition-duration: 0.2s;
+}
+
+.buttonsOnPink {
+    margin-top: 5%;
+    float: right;
+}
+
+.buttonsOnPink:hover {
+    background-color: #b9e0e0;
+    border-color: transparent;
+    color: black;
+}
+
+.textOnButton {
+    color: #b9e0e0;
+    transition-duration: 0.2s;
+}
+
+.buttonsOnPink:hover .textOnPink {
+    padding-left: 100px;
+    color: black;
+}

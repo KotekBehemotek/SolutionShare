@@ -1,0 +1,152 @@
+#absoluteCover {
+    z-index: 6;
+    display: none;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+    transition-duration: 0.4s;
+}
+
+#controlGrid {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    opacity: 0.0;
+}
+
+#controlCell1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 16;
+}
+
+#controlCell2 {
+    grid-column: 11 / 16;
+    grid-row: 1 / 12;
+}
+
+#indexCell {
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+    text-align: center;
+    transition-duration: 0.1s;
+    color: rgba(207, 246, 246, 0.7);
+    font-size: 300%;
+}
+
+.lastCell {
+    grid-column: 12 / 16;
+    grid-row: 1 / 16;
+    transition-duration: 0.2s;
+    place-self: end;
+    padding-bottom: 14%;
+    padding-right: 14%;
+}
+
+#previewPicturesGrid {
+    display: none;
+    position: absolute;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#cellPictures {
+    display: grid;
+    grid-column: 1 / 16;
+    grid-row: 3 / 13;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    opacity: 0.0;
+    transition-duration: 0.4s;
+}
+
+.previewPicture {
+    display: none;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 20%;
+    padding-top: 20%;
+    /*grid-template-columns: repeat(1, 1fr);*/
+    /*grid-template-rows: repeat(2, 1fr);*/
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.0;
+    transition-duration: 0.2s;
+    margin-left: 80%;
+}
+
+.changeDimensions {
+    display: none;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-duration: 0.2s;
+    padding-top: 10%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.changeDimensions:hover {
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.deletePicture {
+    display: none;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transition-duration: 0.2s;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    place-content: end;
+}
+
+.deletePicture:hover {
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.changeDimensionsText {
+    font-size: 25px;
+    color: transparent;
+    transition-duration: 0.2s;
+}
+
+.changeDimensions:hover .changeDimensionsText {
+    color: rgba(207, 246, 246, 0.9);
+}
+
+.deletePictureText {
+    display: block;
+    /*place-self: end;*/
+    /*margin-bottom: 10%;*/
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 10%;
+    font-size: 25px;
+    color: transparent;
+    transition-duration: 0.2s;
+}
+
+.deletePicture:hover .deletePictureText {
+    color: rgba(255, 227, 225, 0.9);
+}

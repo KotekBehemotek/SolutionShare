@@ -1,0 +1,125 @@
+.form {
+    display: grid;
+    position: relative;
+    transition-duration: 0.2s;
+    background-color: rgba(207, 246, 246, 0.7);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#form {
+    width: 89%;
+    padding-top: 89%;
+    margin-left: 3%;
+    margin-bottom: 6%;
+}
+
+#form2 {
+    margin-right: 3%;
+    margin-bottom: 0;
+    float: right;
+    width: 92%;
+    padding-top: 184%;
+}
+
+#styleSelector {
+    display: grid;
+    position: relative;
+    width: 89%;
+    padding-top: 89%;
+    margin-left: 3%;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 1s;
+    background-size: 400%;
+    background-position: center;
+    background-image: linear-gradient(125deg, #9be0d6, #9be0d6, #9be0d6, #ffdfe4, #ffdfe4, #ffdfe4);
+}
+
+#styleSelectorText {
+    position: absolute;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition-duration: 0.2s;
+    font-family: Raanana, fantasy;
+    font-size: 300%;
+}
+
+#styleSelectorText:hover {
+    opacity: 0.0;
+}
+
+.formLabel {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition-duration: 0.2s;
+    opacity: 0.7;
+}
+
+.formLabel:hover {
+    background-color: #222222
+}
+
+#formLabelBackgroundSubmit {
+    border-radius: 10px 10px 0 0;
+}
+
+.textOnPicture {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    opacity: 0.0;
+    padding-top: 10%;
+    display: block;
+}
+
+#textOnPictureBackgroundSubmit {
+    color: #cff6f6;
+}
+
+#textOnPicturePictureSubmit {
+    color: #cff6f6;
+}
+
+.formLabel:hover #textOnPictureBackgroundSubmit {
+    opacity: 0.9;
+}
+
+#formLabelPicture {
+    border-radius: 10px 10px 0 0;
+}
+
+.formLabel:hover #textOnPicturePictureSubmit {
+    opacity: 0.9;
+}
+
+.formInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+
+#buttonOnBlueSubmitPictures {
+    margin-top: 10%;
+    text-align: center;
+    opacity: 0.0;
+}
+
+.formSubmit {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}

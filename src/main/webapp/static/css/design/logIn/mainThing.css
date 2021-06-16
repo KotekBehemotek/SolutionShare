@@ -1,0 +1,46 @@
+.form {
+    position: relative;
+}
+
+.underButton {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 4.8%;
+    background-color: rgba(39, 31, 31, 0.21);
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    opacity: 0.0;
+}
+
+.additionalTextList {
+    float: right;
+    transition-duration: 0.2s;
+    font-size: 15px;
+    font-family: Raanana, serif;
+    font-style: italic;
+    font-weight: lighter;
+    list-style-type: circle;
+}
+
+#emailAssistList {
+    margin-top: 3.5%;
+    margin-right: 7%;
+}
+
+#password1AssistList {
+    margin-top: 3.5%;
+    margin-right: 7%;
+}
+
+#emailAssistOk {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+#password1AssistOk {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+.formLabel {
+    margin-bottom: 5%;
+    display: inline-block;
+}

@@ -1,0 +1,168 @@
+.solutionTextHello {
+    font-family: Raanana, fantasy;
+    font-size: 400%;
+}
+
+.hello {
+    font-family: Raanana, fantasy;
+    font-size: 400%;
+    text-align: center;
+}
+
+.solutionTextQuestion {
+    font-size: 17px;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+}
+
+.question {
+    font-size: 17px;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.textOnButton {
+    font-size: 15px;
+    font-family: Raanana, serif;
+    font-style: italic;
+    font-weight: lighter;
+    transition: all 0.2s;
+}
+
+.solutionButtons {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.2s;
+}
+
+.button1 {
+    color: black;
+    background-color: #00000000;
+    border-color: black;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    transition: all 0.2s;
+}
+
+.button1Left {
+    margin-bottom: 5%;
+    float: top;
+}
+
+.button1Left:hover {
+    background-color: rgba(255, 244, 247, 0.9);
+    border-color: transparent;
+}
+
+.button1Left:hover .textOnButton {
+    padding-right: 100px;
+}
+
+.button1Right {
+    margin-top: 5%;
+    float: right;
+}
+
+.button1Right:hover {
+    background-color: rgba(185, 224, 224, 0.9);
+    border-color: transparent;
+}
+
+.button1Right:hover .textOnButton {
+    padding-left: 100px;
+}
+
+.solutionFormInput {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #00000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+.textInput {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #00000000;
+    background-color: rgba(207, 246, 246, 0.9);
+    outline: none;
+    font-family: Raanana, serif;
+    font-style: italic;
+    transition: 0.2s;
+}
+
+.solutionFormInput:focus {
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.textInput:focus {
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.solutionFormSubmit {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    background-color: #00000000;
+    color: black;
+    outline: none;
+    transition-duration: 0.2s;
+    opacity: 0.0;
+}
+
+.submit {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    background-color: #00000000;
+    color: black;
+    outline: none;
+    margin-top: 10%;
+    font-family: Raanana, serif;
+    font-style: italic;
+    transition-duration: 0.2s;
+    opacity: 0.0;
+}
+
+.solutionFormSubmit:hover {
+    background-color: rgba(255, 244, 247, 0.9);
+    border-color: transparent;
+    padding-right: 100px;
+
+}
+
+.submit:hover {
+    background-color: rgba(255, 244, 247, 0.9);
+    border-color: transparent;
+    padding-right: 100px;
+
+}

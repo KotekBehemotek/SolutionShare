@@ -1,0 +1,77 @@
+.form {
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.underButton {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 4.8%;
+    background-color: rgba(39, 31, 31, 0.21);
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    opacity: 0.0;
+}
+
+.additionalTextList {
+    float: right;
+    transition-duration: 0.2s;
+    font-size: 15px;
+    font-family: Raanana, serif;
+    font-style: italic;
+    font-weight: lighter;
+    list-style-type: circle;
+}
+
+#nicknameAssistList {
+    margin-top: 2.1%;
+    margin-right: 7%;
+}
+
+#emailAssistList {
+    margin-top: 3.5%;
+    margin-right: 7%;
+}
+
+#password1AssistList {
+    margin-top: 0.5%;
+    margin-right: 7%;
+}
+
+#password2AssistList {
+    margin-top: 3.5%;
+    margin-right: 7%;
+}
+
+#nicknameAssistLengthEr {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+#nicknameAssistWhite {
+    color: rgba(207, 246, 246, 0.9);
+}
+
+#emailAssistLikeEmail {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+#password1AssistLengthEr {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+#password1AssistDigit {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+#password1AssistWhite {
+    color: rgba(207, 246, 246, 0.9);
+}
+
+#password2AssistIsSame {
+    color: rgba(255, 227, 225, 0.9);
+}
+
+.formLabel {
+    margin-bottom: 5%;
+    display: inline-block;
+}

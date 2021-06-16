@@ -1,0 +1,29 @@
+.cell1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 16;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+#helloArea {
+    grid-column: 5 / 12;
+    grid-row: 4 / 12;
+    transition-duration: 0.2s;
+}
+
+#questionArea {
+    grid-column: 7 / 10;
+    grid-row: 12 / 14;
+}
+
+#cell26U {
+    grid-column: 7 / 10;
+    grid-row: 12 / 14;
+}
+
+.lastCell {
+    grid-column: 12 / 16;
+    grid-row: 1 / 16;
+    transition-duration: 0.2s;
+    place-self: end;
+}

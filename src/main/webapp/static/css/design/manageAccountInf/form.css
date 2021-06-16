@@ -1,0 +1,73 @@
+#formContact {
+    /*margin-top: 100%;*/
+}
+
+.textInput {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #00000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+.rightInput {
+    float: right;
+}
+
+#textInputCredo {
+    width: 100%;
+}
+
+#textInputInterest1 {
+    margin-bottom: 5%;
+}
+
+#textInputInterest2 {
+    margin-bottom: 5%;
+}
+
+#textInputName1 {
+    margin-bottom: 5%;
+}
+
+#textInputName2 {
+    margin-bottom: 5%;
+}
+
+#textInputCity {
+    width: 150px;
+}
+
+#textInputCountry {
+    width: 150px;
+}
+
+.submitInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+
+.solutionInputOk {
+    background-color: #cff6f6;
+}
+
+.solutionInputEr {
+    background-color: #ffe3e1;
+}
+
+.textInput:focus {
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+
+}

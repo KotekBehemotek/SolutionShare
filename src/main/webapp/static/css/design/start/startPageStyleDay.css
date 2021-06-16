@@ -1,0 +1,63 @@
+#startPageQuestion {
+    text-align: center;
+}
+
+.cell1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 16;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+.cell2 {
+    grid-column: 5 / 11;
+    grid-row: 1 / 17;
+    background-color: #cff6f6;
+    border-radius: 10px;
+}
+
+.startPageButtons {
+    color: black;
+    background-color: #00000000;
+    border-color: black;
+    height: 60px;
+    width: 300px;
+}
+
+.startPageButtonsOnBlue {
+    margin-bottom: 5%;
+    float: top;
+}
+
+.startPageButtonsOnBlue:hover {
+    background-color: #fff4f7;
+    border-color: transparent;
+}
+
+
+.startPageTextOnBlue {
+    transition-duration: 0.2s;
+}
+
+.startPageButtonsOnBlue:hover .startPageTextOnBlue {
+    padding-right: 100px;
+}
+
+.profilePicture {
+    width: 300px;
+    height: 300px;
+    background-color: #cff6f6;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#profilePictureGrid {
+    border-radius: 10px;
+    display: grid;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}

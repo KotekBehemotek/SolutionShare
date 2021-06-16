@@ -1,0 +1,43 @@
+#textForm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#textInput {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input {
+    font-size: 15px;
+    border-style: solid;
+    border-width: 0;
+    border-color: lightgray;
+    outline: none;
+    display: block;
+    background-color: #cff6f6;
+    height: 100%;
+    opacity: 0.7
+}
+
+.formSubmit {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+
+.formInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
