@@ -133,5 +133,4 @@ public class ManipulateUser {
 
         return gotInf;
     }
-
 }

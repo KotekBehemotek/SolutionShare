@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 public class DataBaseUtilitySearch {
     private static final Logger LOGGER = Logger.getLogger(DataBaseConnector.class.getName());
 
+    // NOTE: I would return whole class object e.g.: User
     public int searchForIDByEmail(String email, Connection connTSU) throws SQLException {
         LOGGER.info("begin searchForIDByEmail()");
 
@@ -31,6 +32,7 @@ public class DataBaseUtilitySearch {
         }
     }
 
+    // NOTE: passwords have to be encrypted, use e.g.: BCrypt or MD5
     public String searchForPasswordByEmail(String email, Connection connTSU) throws SQLException {
         LOGGER.info("begin searchForPasswordByEmail()");
 

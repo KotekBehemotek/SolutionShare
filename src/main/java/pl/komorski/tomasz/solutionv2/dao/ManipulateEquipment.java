@@ -7,9 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+// NOTE: maybe you can rename file and add 'Dao' suffix, e.g.: ManipulateEquipmentDao - I was lost while looking for your DAO ;)
 public class ManipulateEquipment {
     private static final Logger LOGGER = Logger.getLogger(ManipulateEquipment.class.getName());
 
+    // NOTE: constructor injection
     private DataBaseUtilitySearch dataBaseUtilitySearch = new DataBaseUtilitySearch();
 
     public boolean initEquipment(String email, String nickname, Connection connTSU) throws SQLException {
@@ -30,9 +32,11 @@ public class ManipulateEquipment {
         return counterSave > 0;
     }
 
+    // NOTE: I would return List<Equipment> rather than 'Object'
     public ArrayList<Object> findAndGetEquipment(String email, Connection connTSU) throws SQLException {
         LOGGER.info("began findAndGetEquipment()");
 
+        // NOTE: I would rename table into USERS_EQUIPMENTS - table names in plural, and with underline
         PreparedStatement prepareToFind = connTSU.prepareStatement("SELECT * FROM usersEquipment WHERE (eqID) = (?);");
         prepareToFind.setInt(1, dataBaseUtilitySearch.searchForIDByEmail(email, connTSU));
         ResultSet foundEquipment = prepareToFind.executeQuery();
@@ -82,6 +86,7 @@ public class ManipulateEquipment {
         return counterSave > 0;
     }
 
+    // NOTE: I would return List<EquipmentInfo> rather than 'String[]'
     public String[] loadInfFromEquipment(int id, Connection connTSU) throws SQLException {
         LOGGER.info("began loadInfFromEquipment()");
 
