@@ -10,13 +10,13 @@
 <head>
     <title>Who are We?</title>
 
-<%--    <script src="../../../static/js/manageAccountGraphics/Everything.js"></script>--%>
+    <%--    <script src="../../../static/js/manageAccountGraphics/Everything.js"></script>--%>
     <script src="../../../static/js/manageAccountGraphics/Functions.js"></script>
     <script src="../../../static/js/tmlentFramework/Classes.js"></script>
     <script src="../../../static/js/manageAccountGraphics/Objects.js"></script>
     <script src="../../../static/js/manageAccountGraphics/Variables.js"></script>
     <script src="../../../static/js/manageAccountGraphics/NonElementary.js"></script>
-    <script src="../../../static/js/manageAccountGraphics/Requests.js"></script>
+<%--    <script src="../../../static/js/manageAccountGraphics/Requests.js"></script>--%>
     <script src="../../../static/js/manageAccountGraphics/Elementary.js"></script>
 
     <link rel="stylesheet" href="../../../static/css/grids/gridLayout.css">
