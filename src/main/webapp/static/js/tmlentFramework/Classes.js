@@ -69,15 +69,13 @@ class XHRController {
         }
     }
 
-    moveTheLine() {
-        console.log("here");
-        console.log(window[this.line[0] + ""](this.lineParams[0]));
-        xhrStorage.addToStorage(xhrController.lineKeys[0], window[this.line[0] + ""](this.lineParams[0]));
+    async moveTheLine() {
+        if (this.lineKeys[0] !== undefined) {
+            xhrStorage.addToStorage(this.lineKeys[0], await (window[this.line[0] + ""](this.lineParams[0])));
+        } else {
+            await (window[this.line[0] + ""](this.lineParams[0]));
+        }
 
-        // window[this.line[0] + ""](this.lineParams[0]).then(result => function () {
-        //     console.log(result);
-        //     xhrStorage.addToStorage(xhrController.lineKeys[0], result);
-        // });
         this.line.shift();
         this.lineParams.shift();
         this.lineKeys.shift();
@@ -97,11 +95,10 @@ class XHRStorage {
     }
 
     takeFromStorage(key) {
-        this.storingLine.get(key);
-        console.log(this.storingLine);
+        return this.storingLine.get(key);
     }
 
     removeFromStorage(key) {
-        return this.storingLine.delete(key);
+        this.storingLine.delete(key);
     }
 }
