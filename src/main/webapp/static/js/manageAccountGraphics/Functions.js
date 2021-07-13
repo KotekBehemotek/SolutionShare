@@ -78,16 +78,38 @@ function deAnimateSelector() {
 }
 
 // shows "preview pictures" button or hides it
-function showPreview() {
+function showPreviewButton() {
     let target = gBId(preview);
 
     if (informator.isNewImagDisplayed(0) || informator.isNewImagDisplayed(1)) {
         target.style.opacity = "1.0";
-        // target.addEventListener("click", )
+        target.addEventListener("click", showPreview)
     } else {
         target.style.opacity = "0.0";
-        // target.removeEventListener("click", );
+        target.removeEventListener("click", showPreview);
     }
+}
+
+// shows screen of picture preview
+function showPreview() {
+    for (let i = 0; i < 3; i++) {
+        gBCN(gridElements[i], 0).style.filter = "blur(10px)";
+        gBCN(gridElements[i], 0).style.opacity = "0.7";
+    }
+    setTimeout(function () {
+        let gridU1 = gBCN("gridU1", 0);
+
+        gridU1.style.display = "grid";
+        gridU1.style.opacity = "1.0";
+        gridU1.addEventListener("click", function () {
+            this.style.display = "none";
+            this.style.opacity = "0.0";
+            for (let i = 0; i < 3; i++) {
+                gBCN(gridElements[i], 0).style.filter = "blur(0px)";
+                gBCN(gridElements[i], 0).style.opacity = "1.0";
+            }
+        });
+    }, 200);
 }
 
 // changes text values on images buttons
@@ -101,11 +123,6 @@ function deleteOrReject(i, target, target2) {
         target.innerHTML = "Select another picture";
         target2.innerHTML = "Reject change";
     }
-}
-
-// shows screen of picture preview
-function showPreviewScreen() {
-
 }
 
 // adds event listener to selected element

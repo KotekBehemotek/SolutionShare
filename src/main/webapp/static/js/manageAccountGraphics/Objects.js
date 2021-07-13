@@ -46,10 +46,6 @@ class Button extends SerialTMLent {
     getDirectory(i) {
         return this.directories[i];
     }
-
-    getAway(i) {
-        location.href = this.directories[i];
-    }
 }
 
 // additional utility object
