@@ -18,11 +18,9 @@ public class StartServlet extends HttpServlet {
         LOGGER.info("begin doGet()");
 
         getServletContext().getRequestDispatcher("/WEB-INF/pages/jsp/Start.jsp").forward(request, response);
-
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOGGER.info("begin doPost()");
-
     }
 }

@@ -128,10 +128,8 @@ public class ManipulateUser {
             gotInf.add(loadedInf.getInt(7));
             gotInf.add(loadedInf.getString(8));
         }
-
         LOGGER.info("ResultSet read to Array");
 
         return gotInf;
     }
-
 }
