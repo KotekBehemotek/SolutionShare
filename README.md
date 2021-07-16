@@ -28,8 +28,9 @@
 * Functions - Functions specific for each JSP, performing operations on HTML elements.
 * NonElementary - Functions specific for each JSP, performing operations on internal JS variables, not HTML elements.
 * Objects - Objects created with use of TMLENT framework and ones specific for each JSP.
-* Requests - Request recieved values (feature of TMLENT request controller (in development)).
 * Variables - HTML elements IDs or their classes names.
+* Initial - Requests needed to be made at the beginning of JSP existance.
+* Last - Operations related to switching to another JSP.
 * ADDITIONAL NOT JSP SPECIFIC - Classes - Stores architecture of TMLENT framework.
 ### Java
 #### Java classes are stored in three main directories:
