@@ -102,7 +102,6 @@ public class ManipulateEquipment {
             infTable[2] = foundInf.getString(3);
             infTable[3] = foundInf.getString(4);
         }
-
         return infTable;
     }
 }

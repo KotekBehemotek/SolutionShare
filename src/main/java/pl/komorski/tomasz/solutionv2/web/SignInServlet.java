@@ -60,7 +60,5 @@ public class SignInServlet extends HttpServlet {
             request.setAttribute("userRegistered", false);
             getServletContext().getRequestDispatcher("/WEB-INF/pages/jsp/SignIn.jsp").forward(request, response);
         }
-
     }
-
 }
