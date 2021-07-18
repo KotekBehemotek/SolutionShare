@@ -4,6 +4,7 @@
 * Introduction
 * Technologies
 * Structure
+* Link to the YT walkthrough
 
 ## Introduction
 #### Solution is meant to become the social media platform. Its development is focused on delivery of features unavaiable on other sharing services.
@@ -37,3 +38,6 @@
 * DAO - Database connection and queries execution.
 * Service - Server side application serving.
 * WEB - Classes dedicated to each JSP.
+
+## See what it looks like
+https://youtu.be/7002Sp2jN0c
